@@ -27,15 +27,6 @@ public class ExerciciosAlertas {
         wait = new WebDriverWait(driver, 20);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://demo.automationtesting.in/Alerts.html");
-
-        //Close Toolbar
-        /*WebElement adToolbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/ins[2]/div[1]")));
-        if (adToolbar.isDisplayed()){
-            adToolbar.click();
-        }
-        else {
-            System.out.println("Elemento não localizado");
-        }*/
     }
 
     @Test
